@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="54.412">
+    <testcase classname="Login Action" name="Validate Login with valid inputs and display successful if expected." time="48.24">
+        <system-out><![CDATA[Given user is on home page..................................................passed
+When user clicks on Sign in link check next page title......................passed
+When user enters username and password clicks on Submit button..............passed
+Then validate user and display a Successful message.........................passed
+Then Logout and close Application...........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login Action" name="Validate Login with invalid inputs and display error message" time="5.662">
+        <system-out><![CDATA[Given user is on home page..................................................passed
+When user clicks on Sign in link check next page title......................passed
+When user enters invalid username and valid password clicks on Submit button.passed
+Then validate for error message.............................................passed
+When user enters valid username and invalid password clicks on submit button.passed
+Then validate for error message.............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login" name="Login Validation" time="0.017">
+        <system-out><![CDATA[Given User is on Home Page..................................................passed
+When User clicks on Sign in Link............................................passed
+Then User sees Login Page...................................................passed
+When User enters "jack" and "jack123" clicks on Submit......................passed
+Then User sees User Account.................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Login" name="Login Validation 2" time="0.002">
+        <system-out><![CDATA[Given User is on Home Page..................................................passed
+When User clicks on Sign in Link............................................passed
+Then User sees Login Page...................................................passed
+When User enters "roopa" and "roopa123" clicks on Submit....................passed
+Then User sees User Account.................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
